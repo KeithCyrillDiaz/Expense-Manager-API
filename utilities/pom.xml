@@ -9,32 +9,41 @@
           <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>rest</artifactId>
+    <artifactId>utilities</artifactId>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-    
+
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
+                <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+         <dependency>
+            <groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- JWT DEPENDENCIES -->
         <dependency>
-                <groupId>com.keithdiaz.training</groupId>
-                <artifactId>services</artifactId>
-                <version>${project.version}</version>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.5</version>
         </dependency>
         <dependency>
-                <groupId>com.keithdiaz.training</groupId>
-                <artifactId>models</artifactId>
-                <version>${project.version}</version>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.11.5</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
-                <groupId>com.keithdiaz.training</groupId>
-                <artifactId>utilities</artifactId>
-                <version>${project.version}</version>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId> <!-- for JSON serialization -->
+            <version>0.11.5</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
