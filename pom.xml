@@ -12,6 +12,7 @@
 		<module>repositories</module>
 		<module>rest</module>
 		<module>main</module>
+		<module>utilities</module>
 	</modules>
 	<name>expense-manager</name>
 	<description>Demo project for Spring Boot</description>
